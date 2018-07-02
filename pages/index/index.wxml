@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <image src='../../bg.jpg' class='bgbox'></image>
+  <button class="toPublish" type="primary" bindtap="toPublish">去发布</button>
+  <view class='infobox' wx:if="{{hasLoad}}">
+  <!-- <view class="userinfo">
+     <block wx:if="{{hasUserInfo}}">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>  
+  </view> -->
+
+  <view class='active_info'>
+    <text class='active_title'>{{active_title}}</text>
+    <text class='active_time'>时间：{{active_time}}</text>
+    <text class='active_addr'>地点：{{active_addr}}</text>
+  </view>
+
+  <view class='hasJoined'>
+    <text class='active_joined'>已报名人员：</text>
+    <block wx:for="{{active_joined}}" wx:for-item="item" wx:key="index">
+      <view class="userinfo">
+        <image class="userinfo-avatar" src="{{item.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="usermotto">
+    <button wx:if="{{!hasJoined}}" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击报名 </button>
+    <button wx:else bindtap="cancelJoin">取消报名</button>
+  </view>
+  </view>
+</view>

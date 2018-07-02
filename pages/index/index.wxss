@@ -1,0 +1,76 @@
+/**index.wxss**/
+.userinfo {
+  display: inline-block;
+  text-align: center;
+  width: 120rpx;
+  height: 150rpx;
+}
+
+.bgbox{
+  height: 1600rpx;
+  width:100%;
+}
+
+.toPublish{
+  position:absolute;
+  top:18rpx;
+  right:23rpx;
+  line-height:2;
+
+}
+
+.infobox{
+  position: absolute; 
+  top: 300rpx; 
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 75%;
+  display: block;
+}
+
+.hasJoined,.active_info {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.active_title {
+  /* display: flex; */
+  display: block;
+  width: 100%;
+  font-size: 45rpx;
+  font-weight: bold;
+  text-align: center;
+  color: green;
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+}
+
+.active_addr,.active_time,.active_joined {
+  display: flex;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+  color: #82a6f5;
+}
+
+.active_joined {
+  font-size: 40rpx;
+  color: #7fb80e;
+  margin-top: 50rpx;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 20rpx;
+}
+
+.usermotto {
+  margin-top: 80rpx;
+}

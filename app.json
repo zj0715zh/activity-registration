@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundColor":"#eeeeee",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00755E",
+    "navigationBarTitleText": "活动报名表",
+    "navigationBarTextStyle":"white"
+  }
+}
